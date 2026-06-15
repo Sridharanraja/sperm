@@ -22,7 +22,7 @@ def load_model(model_path):
 
 # --- Sidebar Controls ---
 st.sidebar.header("⚙️ Settings")
-model_path = st.sidebar.text_input("Model Path", "./best_cs_300.pt")
+model_path = st.sidebar.text_input("Model Path", "./best_15-06_300.pt")
 confidence = st.sidebar.slider("Detection Confidence", min_value=0.0, max_value=1.0, value=0.25, step=0.05)
 
 st.sidebar.markdown("---")
