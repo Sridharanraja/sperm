@@ -972,7 +972,7 @@ with st.sidebar:
 
     st.divider()
     st.markdown('<div class="section-header">Detection Settings</div>', unsafe_allow_html=True)
-    conf_threshold = st.slider("Confidence Threshold", 0.1, 0.99, 0.40, 0.05)
+    conf_threshold = st.slider("Confidence Threshold", 0.1, 0.99, 0.25, 0.05)
     analysis_duration = st.slider("Analysis Duration (s)", 5, 60, 15)
 
 
