@@ -1206,7 +1206,7 @@ def render_summary(summary: dict, cal: dict):
             <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
                 <div class="kpi-card">
                     <div class="kpi-label">Concentration</div>
-                    <div class="kpi-value" style="font-size:22px;">{summary.get('concentration_mpm',0):.2f}M</div>
+                    <div class="kpi-value" style="font-size:22px;">{summary.get('concentration_mpm',0):.4f}M</div>
                     <div class="kpi-sub">sperm/mL</div>
                 </div>
                 <div class="kpi-card">
@@ -1215,7 +1215,7 @@ def render_summary(summary: dict, cal: dict):
                 </div>
                 <div class="kpi-card">
                     <div class="kpi-label">TMSC</div>
-                    <div class="kpi-value" style="font-size:22px;">{summary.get('tmsc_mpm',0):.1f}M</div>
+                    <div class="kpi-value" style="font-size:22px;">{summary.get('tmsc_mpm',0):.4f}M</div>
                     <div class="kpi-sub">motile/mL</div>
                 </div>
             </div>
