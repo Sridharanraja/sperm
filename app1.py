@@ -470,7 +470,7 @@ class VideoProcessor:
         self.px_per_um = 1.0 / calibration["um_per_px"]
         self.fps = calibration.get("fps", 30.0)
         # Make sure to put the exact path to your best.pt file here
-        self.detector = RealYOLODetector(./best_15-06_300.pt)
+        self.detector = RealYOLODetector("./best_15-06_300.pt")
         # self.detector = MockYOLODetector(num_sperm=int(calibration.get("num_sperm", 40)))
         self.tracker = SimpleTracker(iou_threshold=0.15, max_age=25)
         self.analyzer = MotionAnalyzer(
