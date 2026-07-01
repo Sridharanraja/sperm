@@ -437,29 +437,6 @@ class MotionAnalyzer:
         else:
             return "Non-Progressive", (220, 190, 40)
 
-    # def classify_motility(self, track: SpermTrack) -> Tuple[str, Tuple]:
-    #     """Multi-frame classification"""
-    #     pos = list(track.positions)
-    #     if len(pos) < self.min_frames:
-    #         return "Unknown", (128, 128, 128)
-
-    #     speeds = list(track.speeds)
-    #     if not speeds:
-    #         return "Immotile", (220, 50, 50)
-
-    #     avg_speed = np.mean(speeds)
-    #     casa = self.compute_casa_metrics(track)
-    #     net_disp = casa.get("net_disp_um", 0)
-
-    #     # Classification logic
-    #     if avg_speed < self.immotile_speed_thr and net_disp < self.immotile_disp_thr:
-    #         return "Immotile", (220, 50, 50)
-    #     elif avg_speed >= self.progressive_speed_thr and net_disp >= self.progressive_disp_thr:
-    #         return "Progressive", (50, 220, 80)
-    #     else:
-    #         return "Non-Progressive", (220, 190, 40)
-
-
 # ═══════════════════════════════════════════════════════════════════════════════
 # VIDEO PROCESSOR
 # ═══════════════════════════════════════════════════════════════════════════════
